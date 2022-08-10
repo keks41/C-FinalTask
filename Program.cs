@@ -8,3 +8,14 @@ for (int i = 0; i < array.Length; i++)
 }
 System.Console.WriteLine(" Новый массив :");
 string[] arrayNew = new string[count];
+for (int i = 0; i < count; i++)
+    {
+        string length = array[i + 1];
+        if (length.Length <= 3)
+        {
+            arrayNew[i] = length;
+        }
+     
+    }
+
+System.Console.WriteLine("[" + string.Join(" , ", arrayNew ) + "]");
